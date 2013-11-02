@@ -121,9 +121,6 @@ nav li a:hover {
     height: 300px;
     width: 35%;
   }
-  footer {
-    background: #f00;
-  }
   nav {
     font-size: 1.2em;
   }
@@ -138,9 +135,6 @@ nav li a:hover {
   article,
   aside {
     margin: 0 0.1em;
-  }
-  footer {
-    background: #008000;
   }
   header h1,
   nav {
@@ -162,17 +156,11 @@ nav li a:hover {
   #contenido {
     width: 100%;
   }
-  footer {
-    background: #00f;
-  }
   nav {
     font-size: 1.1em;
   }
 }
 @media screen and (max-width: 600px) {
-  footer {
-    background: #0ff;
-  }
   nav {
     font-size: 1.1em;
   }
@@ -186,9 +174,6 @@ nav li a:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  footer {
-    background: #f0f;
-  }
   nav li {
     display: block;
     margin: 0;
@@ -212,7 +197,4 @@ nav li a:hover {
   }
 }
 @media screen and (max-width: 320px) {
-  footer {
-    background: #ff0;
-  }
 }
