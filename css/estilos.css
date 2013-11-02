@@ -1,0 +1,218 @@
+/** variables **/
+/** Mixing **/
+@import url("http://fonts.googleapis.com/css?family=Righteous");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Droid';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/DroidSans-Bold-webfont.eot"), src url("../fonts/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), src url("../fonts/DroidSans-Bold-webfont.ttf") format("truetype"), src url("../fonts/DroidSans-Bold-webfont.svg") format("svg"), src url("../fonts/DroidSans-Bold-webfont.woff") format("woff");
+}
+a {
+  color: #1e6381;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #f60;
+}
+article,
+aside {
+  -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  border-radius: 0.6em;
+  border: thin solid #1e6381;
+  display: inline-block;
+  margin: 0 0.7em;
+  vertical-align: top;
+  width: 60%;
+}
+aside {
+  height: 260px;
+  width: 35%;
+}
+body {
+  font-family: 'Droid', Verdana, Arial;
+  font-size: 16px;
+  text-align: center;
+}
+footer,
+header,
+#contenido {
+  background: #ddd;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 90%;
+}
+footer {
+  border-top: thin solid #57abb8;
+  font-size: 0.75em;
+  padding: 0.5em 0;
+}
+header h1,
+nav {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 25%;
+}
+nav {
+  font-size: 1.3em;
+  text-align: right;
+  width: 70%;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+nav li a {
+  background: #eee;
+  border: thin solid #1e6381;
+  padding: 0.5em;
+  -webkit-border-radius: 0.6em;
+  -moz-border-radius: 0.6em;
+  border-radius: 0.6em;
+}
+nav li a:hover {
+  background: #1e6381;
+  border: thin solid #f60;
+  -webkit-border-radius: 0.75em 0.5em 1em 0;
+  -moz-border-radius: 0.75em 0.5em 1em 0;
+  border-radius: 0.75em 0.5em 1em 0;
+  color: #fff;
+}
+#contenido {
+  background: #eee;
+  font-family: 'Righteous', Arial;
+  padding: 1em 0;
+}
+.cambio {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+.texto {
+  margin: 0.5em 1em;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+/* Técnica Mircha - responsive design 320px, 480px, 600px, 768px, 1024px & 1200px*/
+@media screen and (max-width: 1200px) {
+  article,
+  aside {
+    margin: 0 0.3em;
+    width: 60%;
+  }
+  aside {
+    height: 300px;
+    width: 35%;
+  }
+  footer {
+    background: #f00;
+  }
+  nav {
+    font-size: 1.2em;
+  }
+  nav li {
+    padding: 0 0.25em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  & {
+    height: 380px;
+  }
+  article,
+  aside {
+    margin: 0 0.1em;
+  }
+  footer {
+    background: #008000;
+  }
+  header h1,
+  nav {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  article,
+  aside {
+    margin: 0 0.1em;
+  }
+  aside {
+    height: 420px;
+  }
+  footer,
+  header,
+  #contenido {
+    width: 100%;
+  }
+  footer {
+    background: #00f;
+  }
+  nav {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    background: #0ff;
+  }
+  nav {
+    font-size: 1.1em;
+  }
+  nav li {
+    margin: 0 2em 2em;
+    min-width: 150px;
+  }
+  nav li a {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    background: #f0f;
+  }
+  nav li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  nav li a {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom: thin solid #1e6381;
+    display: block;
+    padding: 0.5em 0;
+  }
+  nav li a:hover {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    background: #ff0;
+  }
+}

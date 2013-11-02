@@ -1,0 +1,206 @@
+/** variables **/
+c = #1e6381
+letra = 16px
+naranja = #F60
+
+
+/** Mixing **/
+bordes()
+	-webkit-border-radius arguments
+	-moz-border-radius arguments
+	border-radius arguments
+
+box-sizing()
+	-ms-box-sizing border-box
+	-moz-box-sizing border-box
+	-o-box-sizing border-box
+	-webkit-box-sizing border-box
+	box-sizing border-box
+
+transition()
+	-webkit-transition all 1s ease-out
+	-moz-transition all 1s ease-out
+	-ms-transition all 1s ease-out
+	-o-transition all 1s ease-out
+	transition all 1s ease-out
+
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+*
+	border 0
+	margin 0
+	padding 0
+
+@font-face
+	font-family 'Droid'
+	font-style normal
+	font-weight normal
+	src url(../fonts/DroidSans-Bold-webfont.eot),
+	src url(../fonts/DroidSans-Bold-webfont.eot?#iefix)format("embedded-opentype"),
+	src url(../fonts/DroidSans-Bold-webfont.ttf)format("truetype"),
+	src url(../fonts/DroidSans-Bold-webfont.svg)format("svg"),
+	src url(../fonts/DroidSans-Bold-webfont.woff)format("woff")
+
+a
+	color c
+	font-weight bold
+	text-decoration none
+	&:hover
+		color #f60
+
+article, aside
+	bordes (.6em)
+	border thin solid c
+	display inline-block
+	margin 0 .7em
+	vertical-align top
+	width 60%
+
+aside
+	height 200px + 60px
+	width 35%
+
+body
+	font-family 'Droid', Verdana, Arial
+	font-size letra
+	text-align center
+
+footer, header, #contenido
+	background #DDD
+	box-sizing()
+	margin 0 auto
+	width 90%
+
+footer
+	border-top thin solid #57ABB8
+	font-size .75em
+	padding .5em 0
+
+header h1, nav
+	display inline-block
+	text-align left
+	vertical-align middle
+	width 25%
+
+nav
+	font-size 1.3em
+	text-align right
+	width 70%
+
+	ul
+		list-style-type none
+
+	li
+		cursor pointer
+		display inline-block
+		vertical-align top
+		a
+			background #eee
+			border thin solid c
+			padding .5em
+			bordes(.6em)
+			&:hover
+				background c
+				border thin solid naranja
+				bordes (.75em .5em 1em 0)
+				color #FFF
+
+#contenido
+	background #eee
+	font-family 'Righteous', Arial
+	padding 1em 0
+
+.cambio
+	transition()
+
+.texto
+	margin .5em 1em
+	padding-bottom 1em
+	text-align justify
+
+/* Técnica Mircha - responsive design 320px, 480px, 600px, 768px, 1024px & 1200px*/
+@media screen and (max-width: 1200px)
+	article, aside
+		margin 0 .3em
+		width 60%
+
+	aside
+		height 300px
+		width 35%
+
+	footer
+		background red
+	nav
+		font-size 1.2em
+		li
+			padding 0 .25em
+
+
+@media screen and (max-width: 1024px)
+	article, aside
+		margin 0 .1em
+
+	aside
+	 	height 380px
+
+	footer
+		background green
+
+	header h1, nav
+		display block
+		text-align center
+		width 100%
+
+@media screen and (max-width: 768px)
+	article, aside
+		margin 0 .1em
+
+	aside
+		height 420px;
+
+	footer, header, #contenido
+		width 100%
+
+	footer
+		background blue
+
+	nav
+		font-size 1.1em
+
+@media screen and (max-width: 600px)
+	footer
+		background cyan
+	
+	nav
+		font-size 1.1em
+		li
+			margin 0 2em 2em
+			min-width 150px
+			a
+				display block
+				width 100%
+
+@media screen and (max-width: 480px)
+	footer
+		background magenta
+
+	nav li
+		display block
+		margin 0
+		padding 0
+		width 100%
+
+		a
+			border 0
+			bordes(0)
+			border-bottom thin solid c
+			display block
+			padding 0.5em 0
+			&:hover
+				border 0
+				bordes(0)
+
+
+@media screen and (max-width: 320px)
+	footer
+		background yellow
